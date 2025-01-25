@@ -19,7 +19,7 @@
             font-family: 'Press Start 2P', cursive;
             color: #fff;
             text-align: center;
-            transition: background 0.5s ease-in-out; /* Smooth background transition */
+            transition: background 1.5s ease-in-out; /* Smooth background transition */
         }
 
         .container {
@@ -142,15 +142,17 @@
 
     <script>
         let pleadingMessages = [
-            "Pleaseee say yes! 😭",
-            "I'll do anything for you! 🙏",
-            "You're my sunshine! ☀️",
-            "How can you say no to this face? 🥺"
+            "Pleaseee say yes! I'm begging! 🙏",
+            "Amay erom bhabe na bolte parli toh?🥺",
+            "You're my sunshine, don't leave me in the rain! 🌞🌧️",
+            "Khuuuuuub dukkho dichhis amay 😭"
         ];
         let messageIndex = 0;
 
         function handleYes() {
-            document.body.style.background = "url('tulip_field.jpg') no-repeat center center/cover";
+            setTimeout(() => {
+                document.body.style.background = "url('tulip_field.jpg') no-repeat center center/cover";
+            }, 100);
             document.querySelector('.message').innerText = "I love youu hunnyyy mwahhhh 🤗😘💕🌷";
             document.querySelector('.buttons').style.display = 'none';
             document.getElementById('pleading-message').style.display = 'none';
