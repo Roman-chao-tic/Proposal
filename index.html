@@ -19,6 +19,7 @@
             font-family: 'Press Start 2P', cursive;
             color: #fff;
             text-align: center;
+            transition: background 0.5s ease-in-out; /* Smooth background transition */
         }
 
         .container {
@@ -106,6 +107,23 @@
             }
             50% {
                 transform: translateY(-10px);
+            }
+        }
+
+        /* Suggestion 3: Improved Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .message {
+                font-size: 1.5rem;
+                padding: 0 20px; /* Add padding to prevent text from overflowing */
+            }
+
+            button {
+                font-size: 0.8rem;
+                padding: 10px 20px;
+            }
+
+            #pleading-message {
+                font-size: 1rem;
             }
         }
     </style>
