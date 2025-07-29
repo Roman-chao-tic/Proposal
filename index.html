@@ -238,18 +238,9 @@
             }, 500);
         }
 
-        function handleTulipClick() {
-            document.body.style.transition = "background 1s ease";
-            document.body.style.background = "#fff";
-            document.querySelector('.container').style.display = 'none';
-
-            const typingContainer = document.getElementById('typing-container');
-            typingContainer.style.display = 'block';
-            let text = "Gandu ta toke flowers dilo??";
-            typeText(typingContainer, text, () => {
-                addNahButton(typingContainer);
-            });
-        }
+function handleTulipClick() {
+    window.location.href = "../Proposal-2-main/index.html";
+}
 
         function addNahButton(container) {
             const button = document.createElement('button');
